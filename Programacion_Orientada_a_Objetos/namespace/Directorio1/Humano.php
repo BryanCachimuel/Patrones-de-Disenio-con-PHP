@@ -1,5 +1,7 @@
 <?php
 
+namespace Directorio1;
+
 class Humano {
 
     public function bienvenida(){
