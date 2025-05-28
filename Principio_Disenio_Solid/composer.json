@@ -1,0 +1,10 @@
+
+{
+    "_comentario": "se configura que se carguen todas las clases que se creen en el directorio app",
+
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
