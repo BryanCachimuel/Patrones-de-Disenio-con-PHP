@@ -28,7 +28,7 @@ class MyClass2 extends MyClass {
     function imprimirMensaje(){
         echo $this->publico . "<br>";
         echo $this->protegido . "<br>";
-        echo $this->privado . "<br>";
+        //echo $this->privado . "<br>";
     }
 }
 
