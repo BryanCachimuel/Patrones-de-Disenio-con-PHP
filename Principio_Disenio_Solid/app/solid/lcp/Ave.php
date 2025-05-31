@@ -4,14 +4,10 @@
 
 namespace App\solid\lcp;
 
-class Ave {
+class Ave extends AveVoladora{
 
     public function comer(): void {
         echo "Estoy comiendo <br>";
-    }
-
-    public function volar(): void {
-        echo "Estoy volando <br>";
     }
 
 }
