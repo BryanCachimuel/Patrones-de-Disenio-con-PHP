@@ -2,17 +2,19 @@
 
 namespace App\solid\dip;
 
+use App\solid\dip\interfaces\Notifier;
+
 class NotificationService {
 
-    private EmailSender $emailSender;
+    private Notifier $notifier;
 
-    public function __construct() {
-        $this->emailSender= new EmailSender();
+    public function __construct(Notifier $notifier) {
+        $this->notifier= $notifier;
     }
 
     public function notify(User $user, string $message) {
         // acciones que quiero que ocurran antes de que se envie el email
-        $this->emailSender->send($user, $message);
+        $this->notifier->send($user, $message);
          // acciones que quiero que ocurran después de que se envie el email
     }
 
