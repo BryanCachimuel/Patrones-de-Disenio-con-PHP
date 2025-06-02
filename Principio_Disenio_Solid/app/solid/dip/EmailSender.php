@@ -2,7 +2,9 @@
 
 namespace App\solid\dip;
 
-class EmailSender {
+use App\solid\dip\interfaces\Notifier;
+
+class EmailSender implements Notifier{
 
     public function send(User $user, string $message):void {
 
