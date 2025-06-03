@@ -2,7 +2,7 @@
 
 namespace App\patrones\creacionales\prototype;
 
-class User {
+class User implements Clonable{
     private string $name;
     private string $email;
 
@@ -26,6 +26,10 @@ class User {
      public function setEmail(string $email): void{
         $this->email = $email;
     }  
+
+    public function clone(): Clonable {
+        return new User($this->name, $this->email);
+    }
 
 }
 
