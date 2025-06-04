@@ -4,6 +4,6 @@ namespace App\patrones\creacionales\abstractFactory\contracts;
 
 interface PaymentValidator {
 
-    public function validatePayment(string $transactionId): string;
+    public function validatePayment(string $transactionId): void;
 
 }
