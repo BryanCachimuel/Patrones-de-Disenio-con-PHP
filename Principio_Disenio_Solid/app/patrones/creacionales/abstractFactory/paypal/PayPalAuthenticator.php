@@ -6,8 +6,8 @@ use App\patrones\creacionales\abstractFactory\contracts\PaymentAuthenticator;
 
 class PayPalAuthenticator implements PaymentAuthenticator{
     
-    public function authenticate(): string {
-        return "Autenticando con Paypal";
+    public function authenticate(): void {
+        echo "Autenticando con Paypal <br>";
     }
 
 }
