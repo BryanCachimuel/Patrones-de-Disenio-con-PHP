@@ -3,9 +3,7 @@
 namespace App\patrones\creacionales\builder;
 
 class User {
-
-    // se pone el signo de interrogación delante del tipo de dato para que la variable acepte valores nulos
-
+    
     private ?string $name = null;
 
     private ?string $address = null;
