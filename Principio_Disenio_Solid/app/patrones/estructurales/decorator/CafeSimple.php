@@ -8,7 +8,7 @@ class CafeSimple implements Bebida{
         return "Café";
     }
     public function getCosto(): float {
-        return 2.00;
+        return (int)2.00;
     }
 
 }
